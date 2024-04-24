@@ -612,7 +612,7 @@ impl TxSender {
         if let Some(fee_data_for_subsidy) = fee_data_for_subsidy {
             // The following two bad scenarios are possible when applying subsidy for the tx:
             // - The subsidy is stored, but the tx is then rejected by the state keeper
-            // - The tx is accepted by the state keeper, but the the `store_subsidy_data` returns an error for some reason
+            // - The tx is accepted by the state keeper, but the `store_subsidy_data` returns an error for some reason
             //
             // Trying to omit these scenarios unfortunately leads to large code restructure
             // which is not worth it for subsidies (we prefer stability here)
@@ -910,7 +910,7 @@ impl TxSender {
 
             // The following two bad scenarios are possible when applying subsidy for the tx:
             // - The subsidy is stored, but the tx is then rejected by the state keeper
-            // - The tx is accepted by the state keeper, but the the `store_subsidy_data` returns an error for some reason
+            // - The tx is accepted by the state keeper, but the `store_subsidy_data` returns an error for some reason
             //
             // Trying to omit these scenarios unfortunately leads to large code restructure
             // which is not worth it for subsidies (we prefer stability here)
